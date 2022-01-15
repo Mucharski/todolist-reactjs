@@ -55,14 +55,14 @@ const App = () => {
     <Router>
       <div className='container'>
         <Header />
-        <Route path="/" exact render={() => (
+        <Route path="/todolist-reactjs" exact render={() => (
           <>
             <AddTask handleTaskAddition={handleTaskAddition} />
             <Tasks tasks={tasks} handleTaskCompletion={handleTaskCompletion} handleTaskExclusion={handleTaskExclusion} />
           </>
         )}
         />
-        <Route path="/:taskTitle" exact component={TaskDetails} />
+        <Route path="/todolist-reactjs/:taskTitle" exact component={TaskDetails} />
       </div>
     </Router>
   )

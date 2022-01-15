@@ -7,7 +7,7 @@ const Task = ({ task, handleTaskCompletion, handleTaskExclusion }) => {
   const history = useHistory();
 
   const handleTaskDetailsClick = () => {
-    history.push(`/${task.title}`);
+    history.push(`/todolist-reactjs/${task.title}`);
   };
 
   return (
